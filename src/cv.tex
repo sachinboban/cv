@@ -1,0 +1,348 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+% Font sizes: 10, 11, 12
+% Paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper,
+%              landscape
+% Font families: sans, roman
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% CV theme
+% Options: casual (default), classic, oldstyle, banking
+\moderncvstyle{classic}
+
+% CV color: blue (default), orange, green, red, purple, grey, black
+\moderncvcolor{blue}
+
+% Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{lipsum}
+
+\usepackage{verbatim} % Used for interting block comments
+
+% Reduce document margins
+\usepackage[scale=0.75]{geometry}
+
+% Uncomment to change the width of the dates column
+%\setlength{\hintscolumnwidth}{3cm}
+
+% For the 'classic' style, uncomment to adjust the width of the space allocated
+% to your name
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+%-------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%-------------------------------------------------------------------------------
+
+\firstname{Sachin} % Your first name
+\familyname{Boban} % Your last name
+
+% All information in this block is optional, comment out any lines not needed
+\title{Curriculum Vitae}
+\address{}{Salt Lake City, Utah}
+\mobile{(801) 688 3262}
+\email{sachinbobank@gmail.com}
+
+% Homepage links
+%   First argument: URL for the clickable link
+%   Second argument: URL displayed in the template.
+%                    This allows special characters to be displayed such as the
+%                    tilde.
+\homepage{https://sachinboban.github.io/}{sachinboban.github.io}
+\homepage{https://www.linkedin.com/in/sachinboban/}{linkedin.com/in/sachinboban}
+
+%\extrainfo{additional information}
+% Photo
+%   First argument: Picture height
+%   Second argument: Thickness of the frame around the picture
+%                    (0pt for no frame)
+%\photo[70pt][0.4pt]{pictures/picture}
+
+%\quote{"A witty and playful quotation" - John Smith}
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	COVER LETTER
+%-------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+%\clearpage
+%
+%% Letter recipient
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State}
+%
+%% Letter date
+%\date{\today}
+%
+%% Opening greeting
+%\opening{Dear Sir or Madam,}
+%
+%% Closing phrase
+%\closing{Sincerely yours,}
+%
+%% List of enclosed documents
+%\enclosure[Attached]{curriculum vit\ae{}}
+%
+%% Print letter title
+%\makelettertitle
+%
+%% Dummy text
+%\lipsum[1-2]
+%
+%% Dummy text
+%\lipsum[4]
+%
+%% Print letter signature
+%\makeletterclosing
+\newpage
+
+%-------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%-------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+
+\section{Education}
+
+    \cventry{2018--current}
+            {Master of Science in Computer Science}
+            {University of Utah}{Utah}
+            {\textit{}}
+            {Graduate Student at School of Computing}
+
+    \cventry{2009--2013}
+            {Bachelor of Technology in Computer Science}
+            {National Institute of Technology}{Calicut}
+            {\textit{GPA -- 9.08/10}}
+            {First Class with Distinction}
+
+%-------------------------------------------------------------------------------
+%	THESIS SECTION
+%-------------------------------------------------------------------------------
+
+%\section{Masters Thesis}
+%
+%    \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%    \cvitem{Supervisors}
+%           {Professor James Smith \& Associate Professor Jane Smith}
+%    \cvitem{Description}
+%           {
+%               This thesis explored the idea that money has been the cause of
+%               untold anguish and suffering in the world. I found that it has,
+%               in fact, not.
+%           }
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+
+\section{Experience}
+
+    \subsection{Teaching}
+
+        \cventry{May 2019 --  Present}
+                {Graduate Teaching Assistant}
+                {\textsc{School of Computing, University of Utah}}{Utah}
+                {}
+                {
+                    Graduate Teaching Assistant for Master of Software
+                    Developement (MSD) course in Database Systems.
+                }
+
+        \cventry{Jan 2019 -- April 2019}
+                {Graduate Teaching Assistant}
+                {\textsc{School of Computing, University of Utah}}{Utah}
+                {}
+                {
+                    Graduate Teaching Assistant for the undergraduate course in
+                    Computer Systems.
+                }
+
+%------------------------------------------------
+
+    \subsection{Professional}
+
+        \cventry{Dec 2015 -- June 2018}
+                {Software Development Engineer}
+                {\textsc{Broadcom Limited}}{Bangalore}
+                {}
+                {
+                    Part of the Automotive team that develops Automotive grade
+                    chip-sets based on BroadR-Reach Ethernet.
+                    \newline{}\newline{}
+                    My Work included:
+                    \begin{itemize}
+                        \item Established documentation and review process,
+                              ensuring all documents are reviewed and in sync at
+                              every point of time.
+                        \item Design and development of UART based Shell/Console
+                              with support for command history and shortcut
+                              keys, with custom print functions to keep stack
+                              usage restricted to 128KB.
+                        \item Memory protection using ARM MPU.
+                        \item Design and development of drivers for
+                              Analog-to-Digital Converter(ADC), Watchdog (based
+                              on ARM SP805), Audio-Video Time-stamping etc.
+                        \item Development of Atomic APIs based on ARM LDREX and
+                              STREX instructions.
+                    \end{itemize}}
+
+        \cventry{Jul 2013 -- Aug 2014}
+                {Engineer - Software Development}
+                {\textsc{Broadcom Communication Tech. Pvt. Ltd}}{Bangalore}
+                {}
+                {
+                    \begin{itemize}
+                        \item Worked in Camera and Memory Management for Android
+                              in Mobile Platform Solutions group.
+                        \item Worked in the development and maintenance of unit
+                              testing and associated debugging for NAS team
+                              under LTE modem.
+                    \end{itemize}
+                }
+
+        \cventry{May 2012 -- Jun 2012}
+                {Summer Research Fellowship}
+                {\textsc{Indian Institute of Science}}{Bangalore}
+                {}
+                {
+                    Worked on  DRAM simulations towards understanding the
+                    various factors contributing to performance.
+                }
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+
+\section{Projects}
+    \cventry{}
+            {DRAM Performance Evaluation}
+            {Under Prof. R Govindarajan}
+            {Indian Institute of Science, Bangalore}
+            {}
+            {
+                Worked towards understanding the  various factors affecting DRAM
+                performance and their effects using DRAMSim2.
+            }
+
+    \cventry{}
+            {Virtual Machine Security}
+            {Under Dr. Priya Chandran}
+            {National Institute of Technology, Calicut}
+            {}
+            {
+                A study on the existing security issues associated with the
+                roll-backing mechanism in Virtual Machines and exploration of
+                possible solutions.
+            }
+
+    \cventry{}
+            {Malware Classification}
+            {}
+            {}
+            {}
+            {
+                Worked towards detecting a malware by classifying it into a
+                malware family using Kernel Object Behavioral Graph Clustering.
+                The project gave us an hands-on experience on the basic ways of
+                detecting and identifying a malware.
+            }
+
+%-------------------------------------------------------------------------------
+%	PROGRAMMING SECTION
+%-------------------------------------------------------------------------------
+
+\section{Programming}
+
+    \cvitem{Basic}
+           {
+               \textit{python},
+               \textit{XML},
+               \textit{Shell (scripting)},
+               \textit{Plait}
+           }
+    \cvitem{Intermediate}
+           {\textit{C}}
+
+%-------------------------------------------------------------------------------
+%	VOLUNTEERING SECTION
+%-------------------------------------------------------------------------------
+
+\section{Volunteering}
+
+    \cventry{Aug 2012-- May 2013}
+            {Student Coordinator}
+            {
+                PRISM (Promoting regional schools to international standards
+                through multiple interventions)
+            }
+            {}
+            {}
+            {
+                Kerala government project to raise government schools to
+                international standards, where we helped school students towards
+                improving their academic standards.
+            }
+
+    \cventry{Jul 2011-- May 2012}
+            {Marketing Manager}
+            {Tathva'10}
+            {}
+            {}
+            {
+                Worked towards securing sponsorship deals for the annual
+                technical fest of National Institute of Technology, Calicut,
+                India.
+            }
+
+%-------------------------------------------------------------------------------
+%	AWARDS SECTION
+%-------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%    \cvitem{2011}{School of Business Postgraduate Scholarship}
+%    \cvitem{2010}{Top Achiever Award -- Commerce}
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+
+%\section{Computer skills}
+%
+%    \cvitem{Basic}{\LaTeX}
+%    \cvitem{Intermediate}{\textsc{python}, OpenOffice}
+%    \cvitem{Advanced}{C, Linux, Microsoft Windows, Microsoft Office}
+
+%-------------------------------------------------------------------------------
+
+\end{document}
